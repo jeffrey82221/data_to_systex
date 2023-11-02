@@ -230,3 +230,30 @@ buy_at = pd.DataFrame([[
 ], columns=common_columns + ['twd_amt'])
 
 print("buy_at:\n", buy_at.to_markdown())
+
+
+if __name__ == '__main__':
+    save_as_parquet(
+        {
+            "has_father": has_father,
+            "has_mother": has_mother,
+            "has_siblings": has_siblings,
+            "has_spouse": has_spouse,
+            "has_parents_in_law": has_parents_in_law,
+            "has_maternal_grandparents": has_maternal_grandparents,
+            "has_paternal_grandparents": has_paternal_grandparents,
+            "is_fa_of": is_fa_of,
+            "id_change": id_change,
+            "has_spouse_siblings": has_spouse_siblings,
+            "works_for": works_for,
+            "in_charge": in_charge,
+            "supply": supply,
+            "invest": invest,
+            "has_account": has_account,
+            "company_has_account": company_has_account,
+            "has_phone": has_phone,
+            "register": register,
+            "transaction": transaction,
+            "buy_at": buy_at
+        }
+    )
