@@ -98,7 +98,7 @@ person = pd.DataFrame([[
     "is_customer",
     "esun_employ_status"
 ])
-print("person:\n", person.to_markdown())
+print("\nperson:\n", person.to_markdown())
 
 company = pd.DataFrame([[
     "1".zfill(40),
@@ -121,7 +121,7 @@ company = pd.DataFrame([[
     "foreignarea",
     "state"
 ])
-print("company:\n", company.to_markdown())
+print("\ncompany:\n", company.to_markdown())
 
 phone = pd.DataFrame(
     [[
@@ -130,7 +130,7 @@ phone = pd.DataFrame(
     ]],
     columns=["node_id", "number"]
 )
-print("phone:\n", phone.to_markdown())
+print("\nphone:\n", phone.to_markdown())
 
 shop = pd.DataFrame(
     [[
@@ -139,7 +139,7 @@ shop = pd.DataFrame(
     ]],
     columns=["node_id", "name"]
 )
-print("shop:\n", shop.to_markdown())
+print("\nshop:\n", shop.to_markdown())
 
 account = pd.DataFrame(
     [[
@@ -155,7 +155,7 @@ account = pd.DataFrame(
     ],
     columns=["node_id", "is_alert", "alert_date"]
 )
-print("account:\n", account.to_markdown())
+print("\naccount:\n", account.to_markdown())
 
 
 if __name__ == '__main__':
